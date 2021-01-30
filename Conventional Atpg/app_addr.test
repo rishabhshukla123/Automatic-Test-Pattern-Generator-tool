@@ -1,0 +1,549 @@
+* Name of circuit:  app_addr.bench
+* Primary inputs :
+  1 2 3 4 5 6 7 8 
+  
+* Primary outputs:
+  9 10 11 12 13 
+
+* Test patterns and fault free responses:
+
+20->22 /1
+      1: xxxx1100 xxx10
+      2: xx110100 x1010
+      3: xx111000 x1010
+19->22 /1
+      1: xx0x0x10 xxx10
+      2: xx0x1010 xx110
+      3: xx100x10 x0x10
+      4: xx101010 x0110
+      5: xx110010 x1110
+      6: xx0x0x01 xxx10
+      7: xx0x1001 xx110
+      8: xx100x01 x0x10
+      9: xx101001 x0110
+     10: xx110001 x1110
+8->21 /1
+      1: xx0x0x10 xxx10
+      2: xx0x1010 xx110
+      3: xx100x10 x0x10
+      4: xx101010 x0110
+      5: xx110010 x1110
+7->21 /1
+      1: xx0x0x01 xxx10
+      2: xx0x1001 xx110
+      3: xx100x01 x0x10
+      4: xx101001 x0110
+      5: xx110001 x1110
+13 /1
+      1: xxxxxx00 xxxx0
+      2: xx0x0x10 xxx10
+      3: xx0x1010 xx110
+      4: xx100x10 x0x10
+      5: xx101010 x0110
+      6: xx110010 x1110
+      7: xx0x0x01 xxx10
+      8: xx0x1001 xx110
+      9: xx100x01 x0x10
+     10: xx101001 x0110
+     11: xx110001 x1110
+22 /0
+      1: xxxx1110 xxx01
+      2: xx110110 x1001
+      3: xx111010 x1001
+      4: xxxx1101 xxx01
+      5: xx110101 x1001
+      6: xx111001 x1001
+21 /0
+      1: xxxxxx11 xxxx1
+13 /0
+      1: xxxxxx11 xxxx1
+      2: xxxx1101 xxx01
+      3: xx110101 x1001
+      4: xx111001 x1001
+      5: xxxx1110 xxx01
+      6: xx110110 x1001
+      7: xx111010 x1001
+16->18 /1
+      1: xx110000 x1100
+      2: xx110010 x1110
+      3: xx110011 x1101
+      4: xx110001 x1110
+15->18 /1
+      1: xx0x1000 xx100
+      2: xx101000 x0100
+      3: xx0x1010 xx110
+      4: xx101010 x0110
+      5: xx0x1011 xx101
+      6: xx101011 x0101
+      7: xx0x1001 xx110
+      8: xx101001 x0110
+      9: xx0x0100 xx100
+     10: xx100100 x0100
+     11: xx0x0110 xx110
+     12: xx100110 x0110
+     13: xx0x0111 xx101
+     14: xx100111 x0101
+     15: xx0x0101 xx110
+     16: xx100101 x0110
+6->17 /1
+      1: xx0x1000 xx100
+      2: xx101000 x0100
+      3: xx0x1010 xx110
+      4: xx101010 x0110
+      5: xx0x1011 xx101
+      6: xx101011 x0101
+      7: xx0x1001 xx110
+      8: xx101001 x0110
+5->17 /1
+      1: xx0x0100 xx100
+      2: xx100100 x0100
+      3: xx0x0110 xx110
+      4: xx100110 x0110
+      5: xx0x0111 xx101
+      6: xx100111 x0101
+      7: xx0x0101 xx110
+      8: xx100101 x0110
+19 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx100x00 x0x00
+      4: xx101000 x0100
+      5: xx110000 x1100
+      6: xx0x0x10 xxx10
+      7: xx0x1010 xx110
+      8: xx100x10 x0x10
+      9: xx101010 x0110
+     10: xx110010 x1110
+     11: xx0x0x11 xxx01
+     12: xx0x1011 xx101
+     13: xx100x11 x0x01
+     14: xx101011 x0101
+     15: xx110011 x1101
+     16: xx0x0x01 xxx10
+     17: xx0x1001 xx110
+     18: xx100x01 x0x10
+     19: xx101001 x0110
+     20: xx110001 x1110
+18 /0
+      1: xx111000 x1010
+      2: xx111010 x1001
+      3: xx111011 x1011
+      4: xx111001 x1001
+      5: xx110100 x1010
+      6: xx110110 x1001
+      7: xx110111 x1011
+      8: xx110101 x1001
+17 /0
+      1: xxxx1100 xxx10
+      2: xxxx1110 xxx01
+      3: xxxx1111 xxx11
+      4: xxxx1101 xxx01
+19 /0
+      1: xxxx1100 xxx10
+      2: xx111000 x1010
+      3: xx110100 x1010
+      4: xxxx1110 xxx01
+      5: xx110110 x1001
+      6: xx111010 x1001
+      7: xxxx1111 xxx11
+      8: xx111011 x1011
+      9: xx110111 x1011
+     10: xxxx1101 xxx01
+     11: xx110101 x1001
+     12: xx111001 x1001
+8 /1
+      1: xx0x0x10 xxx10
+8 /0
+      1: xx0x0x11 xxx01
+7 /1
+      1: xx0x0x01 xxx10
+7 /0
+      1: xx0x0x11 xxx01
+8->20 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx0x1100 xx010
+      4: xx100x00 x0x00
+      5: xx101000 x0100
+      6: xx101100 x0010
+      7: xx110000 x1100
+      8: xx111000 x1010
+      9: xx111100 x1110
+     10: xx110100 x1010
+     11: xx0x0x10 xxx10
+     12: xx0x1010 xx110
+     13: xx0x1110 xx001
+     14: xx100x10 x0x10
+     15: xx101010 x0110
+     16: xx101110 x0001
+     17: xx110010 x1110
+     18: xx111010 x1001
+     19: xx111110 x1101
+     20: xx110110 x1001
+7->20 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx0x1100 xx010
+      4: xx100x00 x0x00
+      5: xx101000 x0100
+      6: xx101100 x0010
+      7: xx110000 x1100
+      8: xx111000 x1010
+      9: xx111100 x1110
+     10: xx110100 x1010
+     11: xx0x0x01 xxx10
+     12: xx0x1001 xx110
+     13: xx0x1101 xx001
+     14: xx100x01 x0x10
+     15: xx101001 x0110
+     16: xx101101 x0001
+     17: xx110001 x1110
+     18: xx111001 x1001
+     19: xx111101 x1101
+     20: xx110101 x1001
+20 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx0x1100 xx010
+      4: xx100x00 x0x00
+      5: xx101000 x0100
+      6: xx101100 x0010
+      7: xx110000 x1100
+      8: xx111000 x1010
+      9: xx111100 x1110
+     10: xx110100 x1010
+     11: xx0x0x11 xxx01
+     12: xx0x1011 xx101
+     13: xx0x1111 xx011
+     14: xx100x11 x0x01
+     15: xx101011 x0101
+     16: xx101111 x0011
+     17: xx110011 x1101
+     18: xx111011 x1011
+     19: xx111111 x1111
+     20: xx110111 x1011
+8->20 /0
+      1: xx0x0x11 xxx01
+      2: xx0x1011 xx101
+      3: xx0x1111 xx011
+      4: xx100x11 x0x01
+      5: xx101011 x0101
+      6: xx101111 x0011
+      7: xx110011 x1101
+      8: xx111011 x1011
+      9: xx111111 x1111
+     10: xx110111 x1011
+     11: xx0x0x01 xxx10
+     12: xx0x1001 xx110
+     13: xx0x1101 xx001
+     14: xx100x01 x0x10
+     15: xx101001 x0110
+     16: xx101101 x0001
+     17: xx110001 x1110
+     18: xx111001 x1001
+     19: xx111101 x1101
+     20: xx110101 x1001
+7->20 /0
+      1: xx0x0x11 xxx01
+      2: xx0x1011 xx101
+      3: xx0x1111 xx011
+      4: xx100x11 x0x01
+      5: xx101011 x0101
+      6: xx101111 x0011
+      7: xx110011 x1101
+      8: xx111011 x1011
+      9: xx111111 x1111
+     10: xx110111 x1011
+     11: xx0x0x10 xxx10
+     12: xx0x1010 xx110
+     13: xx0x1110 xx001
+     14: xx100x10 x0x10
+     15: xx101010 x0110
+     16: xx101110 x0001
+     17: xx110010 x1110
+     18: xx111010 x1001
+     19: xx111110 x1101
+     20: xx110110 x1001
+20 /0
+      1: xx0x0x10 xxx10
+      2: xx0x1010 xx110
+      3: xx0x1110 xx001
+      4: xx100x10 x0x10
+      5: xx101010 x0110
+      6: xx101110 x0001
+      7: xx110010 x1110
+      8: xx111010 x1001
+      9: xx111110 x1101
+     10: xx110110 x1001
+     11: xx0x0x01 xxx10
+     12: xx0x1001 xx110
+     13: xx0x1101 xx001
+     14: xx100x01 x0x10
+     15: xx101001 x0110
+     16: xx101101 x0001
+     17: xx110001 x1110
+     18: xx111001 x1001
+     19: xx111101 x1101
+     20: xx110101 x1001
+19->12 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx100x00 x0x00
+      4: xx101000 x0100
+      5: xx110000 x1100
+      6: xx0x0x10 xxx10
+      7: xx0x1010 xx110
+      8: xx100x10 x0x10
+      9: xx101010 x0110
+     10: xx110010 x1110
+     11: xx0x0x11 xxx01
+     12: xx0x1011 xx101
+     13: xx100x11 x0x01
+     14: xx101011 x0101
+     15: xx110011 x1101
+     16: xx0x0x01 xxx10
+     17: xx0x1001 xx110
+     18: xx100x01 x0x10
+     19: xx101001 x0110
+     20: xx110001 x1110
+20->12 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx0x1100 xx010
+      4: xx100x00 x0x00
+      5: xx101000 x0100
+      6: xx101100 x0010
+      7: xx110000 x1100
+      8: xx111000 x1010
+      9: xx111100 x1110
+     10: xx110100 x1010
+     11: xx0x0x11 xxx01
+     12: xx0x1011 xx101
+     13: xx0x1111 xx011
+     14: xx100x11 x0x01
+     15: xx101011 x0101
+     16: xx101111 x0011
+     17: xx110011 x1101
+     18: xx111011 x1011
+     19: xx111111 x1111
+     20: xx110111 x1011
+12 /1
+      1: xx0x0x00 xxx00
+      2: xx0x1000 xx100
+      3: xx100x00 x0x00
+      4: xx101000 x0100
+      5: xx110000 x1100
+      6: xxxx1110 xxx01
+      7: xx110110 x1001
+      8: xx111010 x1001
+      9: xx0x0x11 xxx01
+     10: xx0x1011 xx101
+     11: xx100x11 x0x01
+     12: xx101011 x0101
+     13: xx110011 x1101
+     14: xxxx1101 xxx01
+     15: xx110101 x1001
+     16: xx111001 x1001
+19->12 /0
+      1: xxxx1110 xxx01
+      2: xx111010 x1001
+      3: xx110110 x1001
+      4: xxxx1100 xxx10
+      5: xx110100 x1010
+      6: xx111000 x1010
+      7: xxxx1101 xxx01
+      8: xx111001 x1001
+      9: xx110101 x1001
+     10: xxxx1111 xxx11
+     11: xx110111 x1011
+     12: xx111011 x1011
+20->12 /0
+      1: xxxx1110 xxx01
+      2: xx110110 x1001
+      3: xx010110 x0110
+      4: xxx00110 xx110
+      5: xx111010 x1001
+      6: xx110010 x1110
+      7: xx01x010 x0x10
+      8: xxx0x010 xxx10
+      9: xxxx1101 xxx01
+     10: xx110101 x1001
+     11: xx010101 x0110
+     12: xxx00101 xx110
+     13: xx111001 x1001
+     14: xx110001 x1110
+     15: xx01x001 x0x10
+     16: xxx0x001 xxx10
+12 /0
+      1: xx0x0x10 xxx10
+      2: xx0x1010 xx110
+      3: xx100x10 x0x10
+      4: xx101010 x0110
+      5: xx110010 x1110
+      6: xxxx1100 xxx10
+      7: xx110100 x1010
+      8: xx111000 x1010
+      9: xx0x0x01 xxx10
+     10: xx0x1001 xx110
+     11: xx100x01 x0x10
+     12: xx101001 x0110
+     13: xx110001 x1110
+     14: xxxx1111 xxx11
+     15: xx110111 x1011
+     16: xx111011 x1011
+4->15 /1
+      1: xx1000xx x00xx
+      2: xx1010xx x01xx
+      3: xx1011xx x00xx
+      4: xx1001xx x01xx
+3->15 /1
+      1: xx0100xx x00xx
+      2: xx0110xx x01xx
+      3: xx0111xx x00xx
+      4: xx0101xx x01xx
+15 /1
+      1: xx0x00xx xx0xx
+      2: xx1000xx x00xx
+      3: xx0x10xx xx1xx
+      4: xx1010xx x01xx
+      5: xx0x11xx xx0xx
+      6: xx1011xx x00xx
+      7: xx0x01xx xx1xx
+      8: xx1001xx x01xx
+15 /0
+      1: xx1100xx x11xx
+      2: xx1110xx x10xx
+      3: xx1111xx x11xx
+      4: xx1101xx x10xx
+6 /1
+      1: xx0x10xx xx1xx
+6 /0
+      1: xx0x11xx xx0xx
+5 /1
+      1: xx0x01xx xx1xx
+5 /0
+      1: xx0x11xx xx0xx
+6->16 /1
+      1: xx0x00xx xx0xx
+      2: xx1000xx x00xx
+      3: xx1100xx x11xx
+      4: xx0x10xx xx1xx
+      5: xx1010xx x01xx
+      6: xx1110xx x10xx
+5->16 /1
+      1: xx0x00xx xx0xx
+      2: xx1000xx x00xx
+      3: xx1100xx x11xx
+      4: xx0x01xx xx1xx
+      5: xx1001xx x01xx
+      6: xx1101xx x10xx
+16 /1
+      1: xx0x00xx xx0xx
+      2: xx0x11xx xx0xx
+      3: xx1000xx x00xx
+      4: xx1011xx x00xx
+      5: xx1100xx x11xx
+      6: xx1111xx x11xx
+6->16 /0
+      1: xx0x11xx xx0xx
+      2: xx1011xx x00xx
+      3: xx1111xx x11xx
+      4: xx0x01xx xx1xx
+      5: xx1001xx x01xx
+      6: xx1101xx x10xx
+5->16 /0
+      1: xx0x11xx xx0xx
+      2: xx1011xx x00xx
+      3: xx1111xx x11xx
+      4: xx0x10xx xx1xx
+      5: xx1010xx x01xx
+      6: xx1110xx x10xx
+16 /0
+      1: xx0x10xx xx1xx
+      2: xx0x01xx xx1xx
+      3: xx1010xx x01xx
+      4: xx1001xx x01xx
+      5: xx1110xx x10xx
+      6: xx1101xx x10xx
+15->11 /1
+      1: xx0x00xx xx0xx
+      2: xx1000xx x00xx
+      3: xx0x10xx xx1xx
+      4: xx1010xx x01xx
+      5: xx0x11xx xx0xx
+      6: xx1011xx x00xx
+      7: xx0x01xx xx1xx
+      8: xx1001xx x01xx
+16->11 /1
+      1: xx0x00xx xx0xx
+      2: xx0x11xx xx0xx
+      3: xx1000xx x00xx
+      4: xx1011xx x00xx
+      5: xx1100xx x11xx
+      6: xx1111xx x11xx
+11 /1
+      1: xx0x00xx xx0xx
+      2: xx1000xx x00xx
+      3: xx1110xx x10xx
+      4: xx0x11xx xx0xx
+      5: xx1011xx x00xx
+      6: xx1101xx x10xx
+15->11 /0
+      1: xx1110xx x10xx
+      2: xx1100xx x11xx
+      3: xx1101xx x10xx
+      4: xx1111xx x11xx
+16->11 /0
+      1: xx1110xx x10xx
+      2: xx1101xx x10xx
+      3: xx0110xx x01xx
+      4: xx0101xx x01xx
+      5: xxx010xx xx1xx
+      6: xxx001xx xx1xx
+11 /0
+      1: xx0x10xx xx1xx
+      2: xx1010xx x01xx
+      3: xx1100xx x11xx
+      4: xx0x01xx xx1xx
+      5: xx1001xx x01xx
+      6: xx1111xx x11xx
+4 /0
+      1: xx01xxxx x0xxx
+4 /1
+      1: xx00xxxx x1xxx
+3 /0
+      1: xx10xxxx x0xxx
+3 /1
+      1: xx00xxxx x1xxx
+4->14 /1
+      1: xx00xxxx x1xxx
+      2: xx10xxxx x0xxx
+3->14 /1
+      1: xx00xxxx x1xxx
+      2: xx01xxxx x0xxx
+10 /0
+      1: xx00xxxx x1xxx
+      2: xx11xxxx x1xxx
+4->14 /0
+      1: xx11xxxx x1xxx
+      2: xx01xxxx x0xxx
+3->14 /0
+      1: xx11xxxx x1xxx
+      2: xx10xxxx x0xxx
+10 /1
+      1: xx10xxxx x0xxx
+      2: xx01xxxx x0xxx
+1 /1
+      1: 00xxxxxx 0xxxx
+2 /1
+      1: 00xxxxxx 0xxxx
+9 /1
+      1: 00xxxxxx 0xxxx
+      2: 11xxxxxx 0xxxx
+1 /0
+      1: 10xxxxxx 1xxxx
+2 /0
+      1: 01xxxxxx 1xxxx
+9 /0
+      1: 10xxxxxx 1xxxx
+      2: 01xxxxxx 1xxxx

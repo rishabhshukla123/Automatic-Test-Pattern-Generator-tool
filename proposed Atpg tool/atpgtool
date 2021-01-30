@@ -1,0 +1,50 @@
+#!/bin/tcsh -f
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo                         
+echo                    ATPG tool based on boolean satisfiability.
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+
+set my_work_dir = 'pwd'
+
+#..............................................#
+#.............TOOL INITIALIZATION..............#
+#..............................................#
+
+
+if ($#argv != 3) then
+         echo "Info: Please provide the required inputs"
+         exit 1
+endif
+
+if (! -f $argv[1] || $argv[1] == "-help") then
+        if ($argv[1] != "-help") then
+	        echo "Error: $argv[1] File  not found. Exiting..."
+	        exit 1
+        else 
+		echo 
+		echo  
+		echo  "Enter valid command"
+		echo
+		echo
+        endif
+
+else
+	        tclsh testscript.tcl $argv[1] $argv[2] $argv[3]
+endif		
+ 

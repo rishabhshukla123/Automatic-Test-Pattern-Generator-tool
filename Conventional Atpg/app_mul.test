@@ -1,0 +1,50 @@
+* Name of circuit:  app_mul.bench
+* Primary inputs :
+  1 2 3 4 5 6 7 8 
+  
+* Primary outputs:
+  9 10 11 
+
+* Test patterns and fault free responses:
+
+7 /1
+      1: xxxxxx01 xx0
+8 /1
+      1: xxxxxx10 xx0
+11 /1
+      1: xxxxxx0x xx0
+      2: xxxxxx10 xx0
+11 /0
+      1: xxxxxx11 xx1
+3 /1
+      1: xx010xxx x0x
+4 /1
+      1: xx100xxx x0x
+5 /1
+      1: xx0x01xx x0x
+6 /1
+      1: xx0x10xx x0x
+10 /1
+      1: xx0x0xxx x0x
+      2: xx0x10xx x0x
+      3: xx100xxx x0x
+      4: xx1010xx x0x
+12 /0
+      1: xx110xxx x1x
+      2: xx1110xx x1x
+13 /0
+      1: xx0x11xx x1x
+      2: xx1011xx x1x
+10 /0
+      1: xx11xxxx x1x
+      2: xx0111xx x1x
+      3: xxx011xx x1x
+1 /1
+      1: 01xxxxxx 0xx
+2 /1
+      1: 10xxxxxx 0xx
+9 /1
+      1: 0xxxxxxx 0xx
+      2: 10xxxxxx 0xx
+9 /0
+      1: 11xxxxxx 1xx

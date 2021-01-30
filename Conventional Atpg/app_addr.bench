@@ -1,0 +1,37 @@
+# approximate circuit
+# 8 inputs 
+# 5 outputs
+# 1 inverters
+# 14 gates
+
+INPUT(1)
+INPUT(2)
+INPUT(3)
+INPUT(4)
+INPUT(5)
+INPUT(6)
+INPUT(7)
+INPUT(8)
+
+OUTPUT(9)
+OUTPUT(10)
+OUTPUT(11)
+OUTPUT(12)
+OUTPUT(13)
+
+9 = XOR(1 ,2)
+14 = XOR(3, 4)
+15 = AND(3, 4)
+16 = XOR(5, 6)
+17 = AND(5, 6)
+20 = XOR(7, 8)
+21 = AND(7, 8)
+10 = NOT(14)
+11 = XOR(16, 15)
+18 = AND(15, 16)
+19 = OR(18, 17)
+12 = XOR(20, 19)
+22 = AND(19, 20)
+13 = OR (22, 21)
+
+
