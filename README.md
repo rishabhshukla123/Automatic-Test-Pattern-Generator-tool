@@ -31,10 +31,18 @@ Process to run files in folder :proposed Atpg tool
 
 
 1)We carried out our work in linux ( ubuntu 18.04 LTS “Bionic Beaver” ) operating system.
+
 2)run 'sudo apt install yosys' in terminal to install yosys
+
 3)run 'sudo apt install picosat' in terminal to install picosat
+
 4)In the current working directory i.e (proposed atpg tool) run 'chmod 777 atpgtool'
+
 5)run 'sudo apt-get install -y tcl-dev' to install tcl pacakage
+
 6)copy approx_mul.v or approx_addr.v file in working directory
+
 7}To generate test pattrens for multiplier ckt run './atpgtool approx_mul.v 5 4'
+
 8}To generate test pattrens for adder ckt run './atpgtool adder_mul.v 11 8'
+
